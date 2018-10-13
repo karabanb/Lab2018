@@ -12,7 +12,7 @@
 #     goodów i badów.
 #   - zadbaj o to, by kod funkcji nie zależał od wprost od U (nazwy kolumny w x)
 
-#### rozwiązanie ####
+#### rozwiązanie ######
 
 library(data.table)
 
