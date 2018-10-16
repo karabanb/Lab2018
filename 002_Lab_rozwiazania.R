@@ -261,8 +261,6 @@ tmp_cor_norm <- tmp_cor[, lapply(.SD, normalize)]
 tmp_cor_log <- tmp_cor[, lapply(.SD, log10)]
 tmp_cor_sqrt <- tmp_cor[, lapply(.SD, sqrt)]
 
-
-
 corMatrix <- cor(tmp_cor, use = "pairwise.complete.obs")
 corMatrix_stand <- cor(tmp_cor_stand, use = "pairwise.complete.obs")
 corMatrix_norm <- cor(tmp_cor_norm, use = "pairwise.complete.obs")
