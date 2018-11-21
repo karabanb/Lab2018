@@ -29,7 +29,8 @@ roc_plot <- function(GoodBad, Scores){
 
 
 events[is.na(events)] <- 0
-dataset_classif <- cases[events][Month<=6, .(IfPayment6M = ifelse(sum(NumberOfPayment)>0, 1, 0)), by = CaseId][cases]
+dataset_classif <- cases[events][
+  Month<=6, .(IfPayment6M = ifelse(sum(NumberOfPayment)>0, 1, 0)), by = CaseId][cases]
 
 # Następnie podziel zbiór danych przy użyciu funkcji `createDataPartition` z pakietu `caret` 
 # na uczący i testowy w proporcji 70% i 30%.
@@ -69,7 +70,7 @@ round(prop.table(table(cases_test$IfPayment6M)), 3)
 # - Wyśietl podsumowanie dla zbudowanego modelu.
 # - Wygeneruj wizualzację drzewa przy użyciu pakietu `rpart.plot`.
 
-tree1 <- rpart(IfPayment6M~., data = cases_train, method = "class")
+tree1 <- rpart(IfPayment6M ~ ., data = cases_train, method = "class")
 summary(tree1)
 rpart.plot(tree1)
 
