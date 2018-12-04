@@ -129,12 +129,10 @@ TSS_tst <- sum((cases_loanamount_wonas[-ix_trn]$LoanAmount_log - mean(cases_loan
 
 # Dokonaj oceny jakości predykcji za pomocą znanych Ci miar
 
-<<<<<<< HEAD
 # Zmierzymy za pomoca RMSE (Root Mean Square Error) i MAPE (Mean Absolute Percentage Erros)
 
-=======
-# Zmierzymy za pomoca RMSE (Root Mean Square Error) i MAPE (Mean Absolute Percentage Error)
->>>>>>> fd067137afedac556bc7f5ad706648546410350d
+
+
 
 m1_pred_tst <- exp(m1_pred_tst)
 rsids_tst <- cases_loanamount_wonas[-ix_trn]$LoanAmount - m1_pred_tst
