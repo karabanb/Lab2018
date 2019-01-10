@@ -1,6 +1,6 @@
 # Modelowanie Statystyczne w Zarządzaniu Wierzytelnościami Masowymi
 
-**Projekt należy wykonać (przesłać na wskazany adres email) do dnia xxxx.xx.xx.**
+**Projekt należy wykonać (przesłać na wskazany adres kruk.uwr@kruksa.pl) do dnia 2019.01.22 23:59:59**
 
 ### Tematy projektów:
 
